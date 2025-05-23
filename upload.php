@@ -25,7 +25,7 @@ if (file_exists($target_file)) {
 // Check file size
 if ($_FILES['upload']['size'] > 5242880) {
     throw new Exception('File exceeds maximum size limit');
-  $uploadOk = 0;
+    $uploadOk = 0;
 }
 
 // Allow certain file formats
