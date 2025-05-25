@@ -42,7 +42,7 @@ http.createServer((req, res) => {
                     return;
                 }
 
-                res.writeHead(302, { Location: '/talentshow.html' });
+                res.writeHead(302, { Location: '/TalentShow.html' });
                 res.end();
 
             });
