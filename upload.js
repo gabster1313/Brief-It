@@ -42,8 +42,9 @@ http.createServer((req, res) => {
                     return;
                 }
 
-                res.writeHead(200, { 'Content-Type': 'text/plain' });
-                res.end('File uploaded successfully!');
+                res.writeHead(302, { Location: '/talentshow.html' });
+                res.end();
+
             });
         });
     } else {
