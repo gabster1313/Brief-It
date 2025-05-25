@@ -43,7 +43,9 @@ http.createServer((req, res) => {
                 }
 
                 res.writeHead(302, { Location: 'https://briefitapp.netlify.app/talentshow' });
+ main
                 res.end();
+
             });
         });
     } else {
