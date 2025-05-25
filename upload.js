@@ -4,6 +4,8 @@ const formidable = require('formidable');
 const path = require('path');
 
 http.createServer((req, res) => {
+    console.log('Running from directory:', __dirname);
+
     if (req.method.toLowerCase() === 'post') {
         const form = new formidable.IncomingForm({ maxFiles: 1 });
 
@@ -33,18 +35,26 @@ http.createServer((req, res) => {
 
             const oldPath = fileData.filepath;
             const fileName = path.basename(fileData.originalFilename);
-            const newPath = path.join('/Users/gabrielatorna/uf-capstone/Brief-It/Images', fileName);
+
+            const imageDir = path.join(__dirname, 'Images');
+
+            if (!fs.existsSync(imageDir)) {
+                fs.mkdirSync(imageDir);
+                console.log('Images directory created:', imageDir);
+            }
+
+            const newPath = path.join(imageDir, fileName);
 
             fs.rename(oldPath, newPath, (err) => {
                 if (err) {
+                    console.error('File save error:', err);
                     res.writeHead(500, { 'Content-Type': 'text/plain' });
                     res.end('Error saving file.');
                     return;
                 }
 
-                res.writeHead(302, { Location: 'https://briefitapp.netlify.app/talentshow.html' });
+                res.writeHead(302, { Location: 'https://briefitapp.netlify.app/talentshow' });
                 res.end();
-
             });
         });
     } else {
@@ -60,4 +70,5 @@ http.createServer((req, res) => {
 }).listen(90, () => {
     console.log('Server listening on port 90');
 });
+
 
