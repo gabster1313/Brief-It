@@ -42,9 +42,8 @@ http.createServer((req, res) => {
                     return;
                 }
 
-                res.writeHead(302, { Location: '/TalentShow.html' });
+                res.writeHead(302, { Location: 'https://brief-it.netlify.app/talentshow.html' });
                 res.end();
-
             });
         });
     } else {
@@ -60,3 +59,4 @@ http.createServer((req, res) => {
 }).listen(90, () => {
     console.log('Server listening on port 90');
 });
+
