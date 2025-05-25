@@ -4,8 +4,6 @@ const formidable = require('formidable');
 const path = require('path');
 
 http.createServer((req, res) => {
-    console.log('Running from directory:', __dirname);
-
     if (req.method.toLowerCase() === 'post') {
         const form = new formidable.IncomingForm({ maxFiles: 1 });
 
@@ -36,33 +34,48 @@ http.createServer((req, res) => {
             const oldPath = fileData.filepath;
             const fileName = path.basename(fileData.originalFilename);
 
-            const imageDir = path.join(__dirname, 'Images');
+            const imageDir = path.join('/tmp', 'Images');
 
             if (!fs.existsSync(imageDir)) {
                 fs.mkdirSync(imageDir);
-                console.log('Images directory created:', imageDir);
             }
 
             const newPath = path.join(imageDir, fileName);
 
-            fs.rename(oldPath, newPath, (err) => {
-                if (err) {
-                    console.error('File save error:', err);
-                    res.writeHead(500, { 'Content-Type': 'text/plain' });
-                    res.end('Error saving file.');
-                    return;
-                }
+            const readStream = fs.createReadStream(oldPath);
+            const writeStream = fs.createWriteStream(newPath);
+
+            readStream.on('error', (error) => {
+                console.error('Read error:', error);
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Error reading file.');
+            });
+
+            writeStream.on('error', (error) => {
+                console.error('Write error:', error);
+                res.writeHead(500, { 'Content-Type': 'text/plain' });
+                res.end('Error saving file.');
+            });
+
+            writeStream.on('close', () => {
+                fs.unlink(oldPath, (error) => {
+                    if (error) console.error('Temp file delete error:', error);
+                    else console.log('Temp file deleted');
+                });
 
                 res.writeHead(302, { Location: 'https://briefitapp.netlify.app/talentshow' });
                 res.end();
             });
+
+            readStream.pipe(writeStream);
+
         });
     } else {
         // Basic form for testing
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(`
             <form action="/" method="post" enctype="multipart/form-data">
-                <input type="file" name="fileupload" accept=".jpg, .jpeg, .png, .gif" required />
+                <input type="file" name="fileupload" accept=".jpg,.jpeg,.png,.gif" required />
                 <input type="submit" value="Upload Image" />
             </form>
         `);
@@ -70,5 +83,6 @@ http.createServer((req, res) => {
 }).listen(90, () => {
     console.log('Server listening on port 90');
 });
+
 
 
