@@ -42,8 +42,9 @@ http.createServer((req, res) => {
                     return;
                 }
 
-                res.writeHead(302, { Location: 'https://brief-it.netlify.app/talentshow.html' });
+                res.writeHead(302, { Location: 'https://briefitapp.netlify.app/talentshow.html' });
                 res.end();
+
             });
         });
     } else {
