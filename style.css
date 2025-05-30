@@ -102,6 +102,75 @@ body {
   text-align: center;
 }
 
+.brief-container {
+  display: flex;
+  justify-content: center;
+}
+
+.brief-brand {
+  border-style: solid;
+  border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f7f4ed;
+  border-radius: 30px;
+  border-width: 4px;;
+  padding: 30px;
+  width: 300px;
+  height: 400px;
+  margin-left: 40px;
+  font-size: 6rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.brief-brand-copy {
+  font-size: 1.5rem;
+  margin-top: -100px;
+}
+
+.brief-asks {
+  border-style: solid;
+    border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f7f4ed;
+  border-radius: 30px;
+  border-width: 4px;
+  padding: 30px;
+  width: 300px;
+  height: 400px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  
+}
+
+.brief-asks-header{
+  color: #c9b2ea;
+}
+
+.brief-asks-copy {
+  color:#f7f4ed;
+}
+
+.brief-deliverables {
+  border-style: solid;
+  border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f7f4ed;
+  border-radius: 30px;
+  border-width: 4px;
+  padding: 30px;
+  width: 300px;
+  height: 400px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-size: 6rem;
+  
+}
+
 div {
   position: relative;
   z-index: 1;
@@ -183,7 +252,11 @@ div {
   .brief_image1 {
     width: 60%;
     padding: 16px;
-    top: 150%;
+    top: 140%;
+  }
+
+  .brief-container {
+    padding-top: 350px;
   }
 }
 
@@ -195,8 +268,9 @@ div {
   .brief_image1 {
     width: 50%;
     padding: 16px;
-    top: 120%;
+    top: 100%;
   }
+
 }
 
 @media (max-width: 880px) {
@@ -230,7 +304,7 @@ div {
     width: 50%;
     padding: 12px;
     top: 88%;
-  }
+  }  
 }
 
 
