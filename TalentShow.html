@@ -4,44 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Brief It</title>
+    <link rel="JS" href="TalentShow.js">
+    <title> Brief It</title>
     <header>
-    <nav>
-      <a href="index.html" class="logo">Daily Brief </a>
-      <a href="TalentShow.html">Talent Show</a>
-      <a href="archive.html">Archive</a>
-    </nav>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html"><img src="Images/logo_v2.svg" width="80px" class="navbar-logo"></a>
+          <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+              <li><a href="index.html">Weekly briefs</a></li>
+              <li><a href="TalentShow.html">Talent show</a></li>
+              <li><a href="archive.html">Archive</a></li>
+            </ul>
+        </div>
+      </nav>
   </header>
-  <div class="form">
-  <form action="https://brief-it.onrender.com" method="POST" enctype="multipart/form-data">
-      <label>Select image to upload:</label><br/>
-      <input type="file" name="fileupload" accept=".jpg,.jpeg,.png,.gif" required /><br/>
-      <input type="submit" value="Upload Image" name="submit"/>
+  <h1>Brief Uploader</h1>
+  <p>Submit your deliverables here for a chance to be displayed! Deliverables are added to the gallery every 24 hours</p>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" accept = "Image/*">
+    <button type="submit">Upload File</button>
   </form>
-</div>
-
-
-<div class="row">
-  <div class="column">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-  </div>
-  <div class="column">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-  </div>
-  <div class="column">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-    <img src="Images/_Miami travel poster south beach vintage retro _….jpeg">
-  </div>
-
-  
+  <p id="message"></p>
+  <img src="" alt="" id="preview" width="300">
 
 </body>
+<script src="script.js"></script>
+<script src="TalentShow.js"></script>
 </html>
