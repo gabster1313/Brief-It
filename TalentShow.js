@@ -34,15 +34,4 @@ const form = document.getElementById ("uploadForm");
           message.textContent = "File Uploaded Successfully!"
           message.className = "success"
         })
-
-        .catch(error => {
-          console.log("Error", error)
-          message.textContent = "Error Uploading"
-          message.className = "error"
-        })
-
-      }else {
-        message.textContent = "Please select a file to upload"
-        message.className = "error"
-        }
     })
