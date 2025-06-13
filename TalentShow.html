@@ -23,10 +23,17 @@
         </div>
       </nav>
   </header>
-  <h1>Talent Show</h1>
-  <div class="talent-gallery">
-    <img src="Images/pexels-julia-kuzenkov-442028-2996254.jpg" style="border-radius: 20px; width: 1000px">
+  <h1 class="weekly-headline">Talent Show</h1>
+  <div class="scroll-gallery-wrapper">
+  <button class="scroll-btn left" onclick="scrollGallery(-1)">&#8249;</button>
+
+ <div class="gallery-container" id="gallery">
+    <img src="Images/green garden_pinterest.jpg" alt="Green Garden Branding" class="gallery-item" />
+    <img src="Images/sports branding_pinterest.jpg" alt="sports branding" class="gallery-item" />
+    <img src="Images/beach club logo_pinterest.jpg" alt="beach club logo" class="gallery-item" />
   </div>
+  <button class="scroll-btn right" onclick="scrollGallery(1)">&#8250;</button>
+</div>
   <p>Seeking attention? Submit your work below to be featured in the gallery.</p>
   <p>Please allow 24 hours for work to be approved and displayed.</p>
   <form id="uploadForm">
@@ -38,4 +45,5 @@
 <footer>footer</footer>
 <script src="script.js"></script>
 <script src="TalentShow.js"></script>
+
 </html>

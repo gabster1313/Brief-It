@@ -229,6 +229,56 @@ div {
   }
 }
 
+.scroll-gallery-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 200%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+.gallery-item {
+  width: 800px;
+  height: 850px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 60px;
+  padding: 15px;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.scroll-btn:hover {
+  color: #fff;
+}
+
+.scroll-btn.left {
+  left: -10px;
+}
+
+.scroll-btn.right {
+  right: -10px;
+}
+
+
 @media (max-width: 375px) {
   .navbar-container {
     padding: 0 1rem;
