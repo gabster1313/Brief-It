@@ -45,3 +45,12 @@ const form = document.getElementById ("uploadForm");
         message.className = "error"
         }
     })
+    
+    function scrollGallery(direction) {
+    const container = document.getElementById('gallery');
+    const scrollAmount = 600;
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    })
+  }
