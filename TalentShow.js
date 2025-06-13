@@ -52,5 +52,5 @@ const form = document.getElementById ("uploadForm");
     container.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth'
-    })
+    });
   }
