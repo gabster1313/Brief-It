@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Brief It</title>
     <header>
-    <nav class="navbar">
+      <nav class="navbar">
         <div class="navbar-container">
           <a href="index.html"><img src="Images/logo_v2.svg" width="80px" class="navbar-logo"></a>
           <button class="navbar-toggle">
@@ -21,8 +21,34 @@
             </ul>
         </div>
       </nav>
+  </header>
 <body>
-  <a class="juice-archive" href="Juice brief.html"><img src="Images/logo.svg" alt="juice brief" width="150px"></a>
+  <h1>Archive</h1>
+  <div id="myBtnContainer" class="archive-button">
+    <button class="btn active" onclick="filterSelection('all')">Show All</button>
+    <button class="btn" onclick="filterSelection('logo')"> Logos</button>
+    <button class="btn" onclick="filterSelection('BrandIdentity')"> Brand Identity</button>
+    <button class="btn" onclick="filterSelection('Merchandise')"> Merch</button>
+    <button class="btn" onclick="filterSelection('Packaging')"> Packaging</button>
+  </div>
+<div class="archive-container">
+  <div class="filterDiv logo">
+    <a href="Juice brief.html" class="brief-card">
+      <img src="Images/juice-brief.jpg" alt="Juice Brief" width="250px" class="brief-icon">
+      <p class="brief-label">Stellar Brief</p>
+    </a>
+  </div>
+</div>
+
+<div class="archive-container">
+  <div class="filterDiv BrandIdentity">
+    <a href="" class="brief-card">
+      <img src="Images/cinna-brief.jpg" alt="Cinna Brief" width="250px" class="brief-icon">
+      <p class="brief-label">Cinna Brief</p>
+    </a>
+  </div>
+</div>
 </body>
+<footer>footer</footer>
 <script src="script.js"></script>
 </html>

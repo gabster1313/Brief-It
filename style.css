@@ -188,6 +188,74 @@ div {
   padding: 0 4px;
 }
 
+.archive-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.filterDiv {
+  float: left;
+  color: #ffffff;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.brief-icon{
+  border-radius: 30px;
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #426cc2;
+  color: white;
+}
+
+.brief-label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.brief-card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.filterDiv:hover .brief-label {
+  opacity: 1;
+}
+
 /* Nav Bar Responsive */
 @media (max-width: 880px) {
   .navbar {
