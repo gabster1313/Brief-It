@@ -28,8 +28,8 @@ const form = document.getElementById ("uploadForm");
           }
         })
 
-        .then(Response=> response.json())
-        .then(data => {
+        .then(Response=> Response.json())
+          .then(data => {
           console.log(data)
           message.textContent = "File Uploaded Successfully!"
           message.className = "success"
