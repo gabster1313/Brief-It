@@ -1,5 +1,54 @@
+/*Brand Colors
+
+Brief Cards: 
+Background: Blue #486DB4
+Font: #f7f4ed
+
+Button Colors: 
+Background: Purple #9E8DBE
+
+Type:
+On bg: #f7f4ed
+
+
+Other colors:
+
+royal blue: #1E2054
+ICE BLUE: # CCDFEF
+Lavender: #D1B4D6
+Elsa: #f8f5ed
+
+Background color: #f7f4ed
+*/
+
 body {
   background-color: #f7f4ed;
+}
+
+h1{
+  color: #426cc2;
+  font-family: "neulis-neue", sans-serif;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 170px;
+  text-align: center;
+  font-size: 95px;
+  padding: 40px 0;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #c9b2ea;
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+  font-family: kit-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .navbar {
@@ -11,7 +60,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar-container {
@@ -37,17 +85,20 @@ body {
 
 .navbar-container .navbar-menu li a {
   text-decoration: none;
-  color:#031602;
+  color:#f8f5ed;
   padding: 3px 20px;
-  font-weight: 500;
   border-radius: 20px;
-  border: 2px solid #c9b2ea;
-  background-color: #c9b2ea;
+  border: 2px solid #9E8DBE;
+  background-color: #9E8DBE;
   white-space: nowrap;
+  font-size: 20px;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .navbar-container .navbar-menu li a:hover {
-  color:#fff;
+  color:#f8f5ed;
   background-color:#426cc2;
   border: 2px solid #426cc2;
 }
@@ -65,23 +116,29 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background:#fff;
+  background:#9E8DBE;
   transition: all 0.3s ease-in-out;
 }
 
 body {
   margin: 0;
   font-size: 1.3rem;
-  color: var(--text-color);
+  color: #f7f4ed;
   display: flex;
   flex-direction: column;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.upload-copy{
+  color: black;
 }
 
 .weekly-header {
   text-align: center;
   font-size: 95px;
   padding: 40px 0;
-  color: black;
 }
 
 .weekly-headline {
@@ -105,45 +162,61 @@ body {
 .brief-container {
   display: flex;
   justify-content: center;
+
 }
 
 .brief-brand {
   border-style: solid;
   border-color: #426cc2;
   background-color: #426cc2;
-  color:#f7f4ed;
+  color:#f8f5ed;
   border-radius: 30px;
   border-width: 4px;;
   padding: 30px;
   width: 300px;
   height: 400px;
+  font-size: 5.5rem;
+  margin-bottom: 40px;
+  margin-right: 40px;
   margin-left: 40px;
-  font-size: 6rem;
 }
 
 h3 {
   font-size: 2rem;
   margin: 0;
+  color: #CCDFEF;
+  font-family: "neulis-neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4{
+  padding-top: 0;
+  font-family: "neulis-neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 80px;
 }
 
 .brief-brand-copy {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: -100px;
 }
 
 .brief-asks {
   border-style: solid;
-    border-color: #426cc2;
+  border-color: #426cc2;
   background-color: #426cc2;
-  color:#f7f4ed;
+  color:#f8f5ed;
   border-radius: 30px;
   border-width: 4px;
   padding: 30px;
   width: 300px;
   height: 400px;
+  margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 40px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   
 }
 
@@ -152,22 +225,24 @@ h3 {
 }
 
 .brief-asks-copy {
-  color:#f7f4ed;
+  color:#f8f5ed;
+  font-size: 1.3rem;
 }
 
 .brief-deliverables {
   border-style: solid;
   border-color: #426cc2;
   background-color: #426cc2;
-  color:#f7f4ed;
+  color:#f8f5ed;
   border-radius: 30px;
   border-width: 4px;
   padding: 30px;
   width: 300px;
   height: 400px;
+  margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 40px;
-  font-size: 6rem;
+  font-size: 5rem;
   
 }
 
@@ -190,15 +265,22 @@ div {
 
 .archive-container {
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
 
+.archive-button{
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .filterDiv {
   float: left;
-  color: #ffffff;
+  color: #f8f5ed;
   line-height: 100px;
   text-align: center;
   margin: 2px;
@@ -208,6 +290,7 @@ div {
 .brief-icon{
   border-radius: 30px;
   display: block;
+  margin-right: 30px;
 }
 
 .show {
@@ -219,16 +302,18 @@ div {
   border-radius: 30px;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: #f8f5ed;
   cursor: pointer;
+  font-size: 20px;
+
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #426cc2;
 }
 
 .btn.active {
-  background-color: #426cc2;
+  background-color: #9E8DBE;
   color: white;
 }
 
@@ -236,9 +321,9 @@ div {
   position: absolute;
   bottom: 10px;
   left: 0;
-  right: 0;
+  right: -1;
   padding: 5px 10px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(158, 141, 190, 0.5);
   color: white;
   font-weight: bold;
   text-align: center;
@@ -254,6 +339,76 @@ div {
 
 .filterDiv:hover .brief-label {
   opacity: 1;
+}
+
+.tag{
+  display: inline-flex;
+  border-radius: 30px;
+  color: #CCDFEF;
+  border: 2px solid #9E8DBE;
+  background-color: #9E8DBE;
+  font-size: 20px;
+  border-width: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.archive-brand{
+  display: inline-flex;
+  border-style: solid;
+  border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f8f5ed;
+  border-radius: 40px;
+  padding: 50px;
+  width: 1000px;
+  height: 100px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.archive-live{
+  display: inline-flex;
+  border-style: solid;
+  border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f8f5ed;
+  border-radius: 40px;
+  padding: 50px;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+}
+
+.archive-image{
+  display: inline-flex;
+    border-radius: 40px;
+  padding: 30px;
+}
+
+.archive-deliverables{
+  display: block;
+  border-style: solid;
+  border-color: #426cc2;
+  background-color: #426cc2;
+  color:#f8f5ed;
+  border-radius: 40px;
+  padding: 30px;
+  width: 950px;
+  height: 400px;
+  font-size: 2rem;
+}
+
+.upload-copy{
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.archive-brief-container{
+  justify-content: space-between;
 }
 
 /* Nav Bar Responsive */
@@ -346,7 +501,6 @@ div {
   right: -10px;
 }
 
-
 @media (max-width: 375px) {
   .navbar-container {
     padding: 0 1rem;
@@ -369,89 +523,85 @@ div {
 
   .brief_image1 {
     width: 60%;
-    padding: 16px;
-    top: 140%;
+    padding: 30px;
+    top: 185%;
   }
 
   .brief-container {
-    padding-top: 350px;
+    padding-top: 550px;
   }
 }
 
 @media (max-width: 2000px) {
   .weekly-headline {
-    font-size: 15rem;
+    font-size: 13rem;
   }
 
   .brief_image1 {
     width: 50%;
     padding: 16px;
-    top: 100%;
+    top: 140%;
+  }
+
+    .brief-container {
+    padding-top: 350px;
+    justify-items: center;
   }
 
 }
 
-@media (max-width: 880px) {
+@media (max-width: 800px) {
   .weekly-headline {
-    font-size: 10rem;
+    font-size: 20rem;
   }
 
   .brief_image1 {
+    top: 200%;
     width: 65%;
     padding: 16px;
+  }
+
+  .brief-container {
+    padding-top: 350px;
+    display: block;
+    justify-items: center;
   }
 }
  /*brief image*/
 @media (max-width: 932px) {
   .weekly-headline {
-    font-size: 5rem;
+    padding-top: 50px;
+    font-size: 13rem;
+    line-height: 150px;
   }
 
   .brief_image1 {
-    width: 80%;
-    padding: 12px;
-    top: 140%;
+    width: 90%;
+    padding: 10px;
+    top: 135%;
+  }
+
+  .brief-container {
+    padding-top: 350px;
+    display: inline;
+    justify-items: center;
   }
 }
 @media (max-width: 375px) {
   .weekly-headline {
     font-size: 5rem;
+    line-height: 100px;
   }
 
   .brief_image1 {
-    width: 50%;
+    width: 70%;
     padding: 12px;
-    top: 88%;
-  }  
-}
-
-
- /*gallery*/
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+    top: 100%;
   }
-}
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+  .brief-container {
+  padding-top: 100px;
+  display: block;
+  justify-items: center;
   }
 }
