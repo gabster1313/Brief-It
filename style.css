@@ -571,18 +571,17 @@ div {
 @media (max-width: 932px) {
   .weekly-headline {
     padding-top: 50px;
-    font-size: 13rem;
-    line-height: 150px;
+    font-size: 6rem;
+    line-height: 80px;
   }
 
   .brief_image1 {
     width: 90%;
-    padding: 10px;
-    top: 135%;
+    top: 103%;
   }
 
   .brief-container {
-    padding-top: 350px;
+    padding-top: 140px;
     display: inline;
     justify-items: center;
   }
