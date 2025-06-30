@@ -586,14 +586,14 @@ div {
     justify-items: center;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 390px) {
   .weekly-headline {
     font-size: 5rem;
-    line-height: 100px;
+    line-height: 80px;
   }
 
   .brief_image1 {
-    width: 70%;
+    width: 90%;
     padding: 12px;
     top: 100%;
   }
