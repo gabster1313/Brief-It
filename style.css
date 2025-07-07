@@ -586,24 +586,21 @@ div {
     justify-items: center;
   }
 }
-@media only screen
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-      .weekly-headline {
-      font-size: 5rem;
-      line-height: 80px;
-    }
+@media screen and (max-width: 390px) {
+  .weekly-headline {
+    font-size: 5rem;
+    line-height: 80px;
+  }
 
-    .brief_image1 {
-      width: 90%;
-      padding: 12px;
-      top: 100%;
-    }
+  .brief_image1 {
+    width: 90%;
+    padding: 12px;
+    top: 100%;
+  }
 
-    .brief-container {
-    padding-top: 100px;
-    display: block;
-    justify-items: center;
-    }
+  .brief-container {
+  padding-top: 100px;
+  display: inline;
+  justify-items: center;
+  }
 }
