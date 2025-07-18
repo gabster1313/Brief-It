@@ -18,7 +18,7 @@ const form = document.getElementById ("uploadForm");
         formData.append("filename,=", file.name);
 
         message.textContent = "Uploading File...";
-        message.className = "";
+        message.className = "uploading";
 
         fetch("https://upload.uploadcare.com/base/", {
           method: "POST",
