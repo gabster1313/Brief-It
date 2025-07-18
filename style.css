@@ -98,8 +98,8 @@ h1{
 }
 
 .navbar-container .navbar-menu li a:hover {
-  color:#f8f5ed;
-  background-color:#426cc2;
+  color: #f8f5ed;
+  background-color: #426cc2;
   border: 2px solid #426cc2;
 }
 
@@ -266,16 +266,13 @@ div {
 .archive-container {
   overflow: hidden;
   display: inline;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 .archive-button{
   justify-content: center;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: auto;
 }
 
 .filterDiv {
@@ -298,10 +295,17 @@ div {
 }
 
 .btn {
+  font-family: kit-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   border: none;
+  color: #1e2054;
   border-radius: 30px;
   outline: none;
-  padding: 12px 16px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
   background-color: #f8f5ed;
   cursor: pointer;
   font-size: 20px;
@@ -309,6 +313,7 @@ div {
 }
 
 .btn:hover {
+  color: #f8f5ed;
   background-color: #426cc2;
 }
 
@@ -318,11 +323,18 @@ div {
 }
 
 .brief-label {
+  font-family: kit-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border: none;
   position: absolute;
   bottom: 10px;
   left: 0;
   right: -1;
-  padding: 5px 10px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgba(158, 141, 190, 0.5);
   color: white;
   font-weight: bold;
@@ -342,68 +354,111 @@ div {
 }
 
 .tag{
+  margin-left: 225px;
   display: inline-flex;
   border-radius: 30px;
-  color: #CCDFEF;
+  font-family: kit-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f8f5ed;
   border: 2px solid #9E8DBE;
   background-color: #9E8DBE;
   font-size: 20px;
-  border-width: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+}
+
+.archive-brief-container{
+  margin: auto;
+  display: grid;
+  column-count: 3;
+  grid-template-columns: 980px 300px 300px 100px;
+  grid-template-rows: 220px 500px 0px 0px;
+  gap: 5px;
+  justify-content: center;
+}
+
+h2{
+  padding-top: 140px;
+  padding-bottom: 100px;
+  color: #1e2054;
+  font-family: "neulis-neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1px;
+  text-align: left;
+  font-size: 160px;
+}
+
+.archive-brief-title{
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  z-index: 1;
+  position: relative;
 }
 
 .archive-brand{
-  display: inline-flex;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
   border-style: solid;
   border-color: #426cc2;
   background-color: #426cc2;
   color:#f8f5ed;
   border-radius: 40px;
-  padding: 50px;
-  width: 1000px;
-  height: 100px;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  margin-right: 40px;
-  margin-left: 40px;
+  border-width: 4px;
+  padding: 10px 30px 30px 30px;
+  width: 900px;
+  height: 155px;
+  font-size: 3rem;
 }
 
 .archive-live{
-  display: inline-flex;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  text-align: center;
   border-style: solid;
   border-color: #426cc2;
   background-color: #426cc2;
   color:#f8f5ed;
-  border-radius: 40px;
-  padding: 50px;
-  width: 100px;
-  height: 100px;
-  font-size: 2rem;
+  border-radius: 30px;
+  border-width: 4px;
+  padding: 30px;
+  width: 150px;
+  height: 140px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-size: 3.5rem;
 }
 
 .archive-image{
-  display: inline-flex;
-    border-radius: 40px;
-  padding: 30px;
+  width: 360px;
+  border-radius: 30px;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
 }
 
 .archive-deliverables{
-  display: block;
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
   border-style: solid;
   border-color: #426cc2;
   background-color: #426cc2;
   color:#f8f5ed;
   border-radius: 40px;
   padding: 30px;
-  width: 950px;
-  height: 400px;
-  font-size: 2rem;
+  width: 1185px;
+  height: 250px;
+  font-size: 2.5rem;
 }
 
 .upload-copy{
-  padding-top: 70px;
-  padding-left: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 40px;
   padding-right: 30px;
 }
 
@@ -585,6 +640,8 @@ div {
     display: inline;
     justify-items: center;
   }
+
+  
 }
 @media screen and (max-width: 390px) {
   .weekly-headline {
@@ -603,4 +660,66 @@ div {
   display: inline;
   justify-items: center;
   }
+  
+  .archive-brief-container{
+  display: grid;
+  column-count: 2;
+  grid-template-columns: 200px 40px 100px;
+  grid-template-rows: 190px 100px 0px;
+  gap: 10px;
+}
+
+.archive-brief-title{
+  padding-left: 20px;
+  font-size: 6rem;
+  text-align: le;
+}
+
+.archive-brand{
+  margin: auto;
+  grid-column: 1/ span 3;
+  grid-row: 2;
+  border-radius: 25px;
+  width: 290px;
+  height: 15px;
+  font-size: 0.75rem;
+}
+
+.archive-live{
+  grid-column: 1/ span 1;
+  grid-row: 1 / span 1;
+  padding: 5px 30px 40px 30px;
+  width: 80px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tag{
+  margin: 0;
+  font-size: 0.80rem;
+  
+}
+.upload-tag{
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.archive-image{
+  grid-column: 2/ span 1;
+  grid-row: 1/ span 1;
+  width: 140px;
+  font-size: 2rem;
+}
+
+.archive-deliverables{
+  grid-column: 1/ span 3;
+  grid-row: 3/ span 1;
+  border-radius: 40px;
+  padding: 5px 30px 40px 30px;
+  width: 290px;
+  height: 60px;
+  font-size: 0.75rem;
+}
 }
