@@ -49,7 +49,7 @@ const form = document.getElementById ("uploadForm");
     
     function scrollGallery(direction) {
     const container = document.getElementById('gallery');
-    const scrollAmount = 600;
+    const scrollAmount = 275;
     container.scrollBy({
       left: direction * scrollAmount,
       behavior: 'smooth'
