@@ -1027,7 +1027,7 @@ h4{
   }
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 430px) {
   .weekly-headline {
     font-size: 5rem;
     line-height: 80px;
@@ -1071,16 +1071,17 @@ h4{
   }
   
   .brief-brand-copy{
-    padding-top: 15px;
+    padding-top: 1px;
   }
   
   h3{
     font-size: 5rem;
+    line-height: 70px;
   }
 
 
   h2{
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 40px;
   }
 
