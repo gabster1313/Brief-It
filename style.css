@@ -681,23 +681,27 @@ h4{
 
 }
  /*brief image*/
-@media (max-width: 1700px) {
-  .weekly-headline {
+
+@media (max-width: 1700px){
+    .weekly-headline {
     padding-top: 50px;
     font-size: 6rem;
-    line-height: 80px;
+    line-height: 30px;
   }
 
   .brief_image1 {
-    width: 90%;
-    top: 143%;
+    width: 80%;
+    top: 193%;
+  }
+  .subtext-weekly {
+    font-size: 1.5rem;
   }
 
   .brief-container{
     margin: auto;
     padding-top: 100px;
     display: grid;
-    gap: 20px;
+    gap: 80px;
     grid-template-columns: 200px 250px 200px;
     grid-template-rows: 100px 100px 200px;
     justify-items: center;
@@ -707,24 +711,203 @@ h4{
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     max-width: 200px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .brief-brand{
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
-    max-width: 150px;
-    font-size: 4rem;
+    max-width: 190px;
+    font-size: 3rem;
   }
   .brief-deliverables{
       grid-column: 3 / span 1;
       grid-row: 2 / span 1;
-      max-width: 150px;
-      font-size: 2.5rem;
+      max-width: 190px;
+      font-size: 1 rem;
   }
 
   h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 20px;
+  }
+
+  h3{
+    font-size: 3rem;
+    line-height: 40px;
+    padding-bottom: 70px;
+  }
+
+  /* Gallery Responsive */
+  .scroll-gallery-wrapper {
+    width: 300%;
+    max-width: 500px;
+  }
+
+  .gallery-container {
+    display: flex;
+    gap: 5px;
+  }
+
+  .gallery-item {
+    width: 500px;
+    height: 620px;
+  }
+    .archive-brief-container{
+    display: grid;
+    column-count: 2;
+    grid-template-columns: 300px 100px 100px;
+    grid-template-rows: 190px 200px 150px;
+    gap: 30px;
+  }
+
+  .archive-brief-title{
+    padding-left: 20px;
+    font-size: 5rem;
+    line-height: 80px;
+  }
+
+  .archive-container{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  .archive-button{
+    padding-left: 20px;
+  }
+
+  .brief-icon{
+    width: 200px;
+    height: 310px;
+  }
+
+  .archive-brand{
+    margin: auto;
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 2;
+    border-radius: 35px;
+    width: 500px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .archive-live{
+    grid-column: 1/ span 1;
+    grid-row: 1 / span 1;
+    padding: 5px 30px 40px 30px;
+    width: 80px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .tag{
+    margin-left: 40px;
+    
+  }
+  .upload-tag{
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .archive-image{
+    grid-column: 2/ span 2;
+    grid-row: 1/ span 2;
+    width: 190px;
+    font-size: 2rem;
+  }
+
+  .archive-deliverables{
+    margin: auto;
+    grid-column: 1/ span 3;
+    grid-row: 4 / span 2;
+    border-radius: 35px;
+    width: 500px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .nav-btn-prev {
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    border-radius: 40px;
+    height: 30px;
+  }
+
+  .nav-btn-back {
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    border-radius: 40px;
+    height: 30px;
+  }
+
+  .nav-btn-next {
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    border-radius: 40px;
+    height: 30px;
+  }
+}
+
+
+@media (max-width: 965px) {
+  .weekly-headline {
+    padding-top: 50px;
+    font-size: 6rem;
+    line-height: 30px;
+  }
+
+  .brief_image1 {
+    width: 80%;
+    top: 143%;
+  }
+  .subtext-weekly {
+    font-size: 1.5rem;
+  }
+
+  .brief-container{
+    margin: auto;
+    padding-top: 100px;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 200px 250px 200px;
+    grid-template-rows: 100px 100px 200px;
+    justify-items: center;
+  }
+
+  .brief-asks{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    max-width: 200px;
+    font-size: 1.2rem;
+  }
+  .brief-brand{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    max-width: 190px;
+    font-size: 3rem;
+  }
+  .brief-deliverables{
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+      max-width: 190px;
+      font-size: 1 rem;
+  }
+
+  h2{
+    font-size: 1rem;
+    line-height: 20px;
+  }
+
+  h3{
+    font-size: 3rem;
+    line-height: 40px;
+    padding-bottom: 70px;
   }
 
   /* Gallery Responsive */
@@ -854,6 +1037,12 @@ h4{
     width: 80%;
     padding: 12px;
     top: 100%;
+  }
+
+  .subtext-weekly{
+    font-size: 1rem;
+    line-height: 20px;
+    padding-bottom: 40px;
   }
 
   .brief-container {
