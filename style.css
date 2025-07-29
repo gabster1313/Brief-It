@@ -207,6 +207,16 @@ h3{
   line-height: 50px;
 }
 
+.subtext-weekly{
+  color:#1E2054;
+  margin: auto;
+  font-family: kit-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 50px;
+  font-size: 2rem;
+}
+
 .brief-brand-copy {
   font-size: 1.3rem;
   margin-top: -100px;
@@ -276,6 +286,7 @@ div {
   display: inline;
   margin: auto;
   padding-top: 20px;
+  padding-bottom: 350px;
 }
 
 .archive-button{
@@ -470,6 +481,7 @@ h4{
   margin-left: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 300px;
   gap: 1.5rem;
 }
 
@@ -651,7 +663,7 @@ h4{
   }
 }
 
-@media (max-width: 2000px) {
+@media (max-width: 2000px){
   .weekly-headline {
     font-size: 13rem;
   }
@@ -669,7 +681,7 @@ h4{
 
 }
  /*brief image*/
-@media (max-width: 932px) {
+@media (max-width: 1700px) {
   .weekly-headline {
     padding-top: 50px;
     font-size: 6rem;
