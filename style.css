@@ -37,12 +37,6 @@ h1{
   padding: 40px 0;
 }
 
-  .active-time{
-    color: #c9b2ea;
-    font-size: 1.3rem;
-    line-height: 20px;
-  }
-
 .footer {
   position: static;
   left: 0;
@@ -57,6 +51,12 @@ h1{
   font-style: normal;
 }
 
+  .active-time{
+    color: #c9b2ea;
+    font-size: 1.3rem;
+    line-height: 20px;
+  }
+  
 .navbar {
   display: flex;
   align-items: center;
@@ -177,7 +177,7 @@ body {
   background-color: #426cc2;
   color:#f8f5ed;
   border-radius: 30px;
-  border-width: 4px;;
+  border-width: 4px;
   padding: 30px;
   width: 300px;
   height: 400px;
@@ -1622,11 +1622,6 @@ h4{
     font-size: 1rem;
     border-radius: 40px;
     height: 30px;
-  }
-
-  .active-time{
-    font-size: .8rem;
-    line-height: 20px;
   }
 
   /* Gallery Responsive */
