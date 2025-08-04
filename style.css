@@ -56,7 +56,7 @@ h1{
     font-size: 1.3rem;
     line-height: 20px;
   }
-  
+
 .navbar {
   display: flex;
   align-items: center;
@@ -708,7 +708,7 @@ h4{
     display: grid;
     gap: 80px;
     grid-template-columns: 200px 250px 200px;
-    grid-template-rows: 100px 100px 200px;
+    grid-template-rows: 100px 100px 200px 300px;
     justify-items: center;
   }
 
@@ -1231,6 +1231,11 @@ h4{
     padding-bottom: 15px;
   }
 
+    .active-time{
+    font-size: .5rem;
+    line-height: 10px;
+  }
+
   .brief-container{
     margin: auto;
     padding-top: 100px;
@@ -1464,7 +1469,7 @@ h4{
   
   .brief-brand-copy{
     padding-top: 5px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
    .brief-asks-header{
@@ -1622,6 +1627,11 @@ h4{
     font-size: 1rem;
     border-radius: 40px;
     height: 30px;
+  }
+
+    .active-time{
+    font-size: .9rem;
+    line-height: 19px;
   }
 
   /* Gallery Responsive */
